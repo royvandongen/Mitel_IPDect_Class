@@ -17,6 +17,8 @@ Class Mitel_ipdect {
     */
     public function __construct($host = null, $user = null, $pass = null, $transport = "https")
     {
+        include("config.inc.php");
+
         $this->host = $host;
         $this->user = $user;
         $this->pass = $pass;
