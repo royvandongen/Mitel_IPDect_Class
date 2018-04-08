@@ -23,6 +23,16 @@ Just call this class via another PHP script like this:
 ```
 include("mitel_ipdect_class.php");
 ```
+and then initiate the class;
+```
+$mitel = new Mitel_ipdect();
+```
+you could even initiate the class like this, and leave the config.inc.php empty.
+
+```
+$mitel = new Mitel_ipdect("master_ip_address", "username", "password", "https");
+```
+
 
 also make sure to specify the config parameters in config.inc.php
 
